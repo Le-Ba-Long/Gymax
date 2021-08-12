@@ -1,0 +1,547 @@
+    * {
+        margin: 0;
+        padding: 0;
+     }
+    #main {
+        width: 100%;
+        height: auto;
+    }
+     #header {
+         width: 1920px;
+         max-width: 100%;
+         height: 100px;
+         background: rgba(0, 0, 0, 0.6);
+         opacity: 0.8; 
+         position: absolute;
+         z-index: 1;
+     }
+     #header  .header__menu {
+        width: 100%;
+        max-width: 1170px;
+        height: 100px;
+        padding: 0px 20px ;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+     }
+     
+    .header__menu .header__logo {
+        line-height: 150px;
+    }
+    .header__menu  nav.nav li ,a{
+         display: inline-block;
+         list-style: none;
+     }
+     .header__menu nav.nav li a {
+        text-decoration: none;
+        font-family: "Myriad Pro";
+        color: rgb(255, 255, 255);
+        padding: 0px 20px;
+        line-height: 100px;
+        
+     }
+     .header__icon .link:nth-child(2):before, .link:nth-child(2n)::after  {
+        content: "|";
+        padding: 0px 0px; 
+        color: white;
+    }
+    .header__menu--icon li:last-child{
+        padding: 0 0 0 2px;
+    }
+    .header__menu--icon li:first-child{
+        padding: 0 2px 0 0px;
+    }
+      .header__menu .header__list-menu nav.nav li.list :hover {
+        color: yellowgreen;
+    }
+     .header__menu .header__icon nav.nav li.link :hover {
+        color: yellowgreen;
+    }
+     .header__menu .header__icon nav.nav li.link  :hover img  {
+        
+        background: greenyellow;
+    }
+     #slider  {
+        position: relative;
+     }
+     #slider .slider__banner img {
+         width: 100%;
+         max-width: 1920px;
+     }
+     #slider .slider__bottom {
+         width: 100%;
+         max-width: 1170px;
+         margin: auto;
+         position: absolute;
+         z-index: 3;
+         left: 365px;
+         top: 300px;
+    
+     }
+    
+     #slider .slider__text h1 {
+        width: 530px;
+        height: 50px;
+        font-size: 60px;
+        font-family: "Myriad Pro";
+        color: rgb(255, 255, 255);
+        line-height: 1.4;
+        text-align: left;
+        position: absolute;
+        margin-top: 0px;
+        z-index: 4;
+    }
+    #slider .slider__text h2{
+        width: 530px;
+        height: 50px;
+        font-size: 40px;
+        font-family: "Myriad Pro";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: left;
+        position: absolute;
+        margin-top: 70px;
+        z-index: 4;
+    }
+    #slider .slider__text p{
+        width: 530px;
+        height: 50px;
+        font-size: 16px;
+        font-family: "Myriad Pro";
+        color: rgb(255, 255, 255);
+        line-height: 1.4;
+        text-align: left;
+        position: absolute;
+        margin-top: 130px;
+        z-index: 4;
+        
+    }
+    #slider .slider__boton button.btn {
+        width: 145px;
+        height: 50px;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 100px;
+        color: #ffffff;
+        text-align: center;
+        border: 1px solid #ffffff;
+        font-family: "Myriad Pro";
+        position: absolute;
+        margin-top: 250px;
+        z-index: 4;
+        background: none;
+    } 
+    #slider .slider__boton button.btn:hover {
+        background: white;
+        color: red;
+    }
+    #category-product {
+        width: 100%;
+        height: 500px;
+        max-width: 1170px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 365px;
+        bottom: -300px;
+        z-index: 5;
+        background: white;   
+    }
+    .category-product__dumbbells {
+        width: 390px;
+        height: 500px; 
+    }
+    .category-product__dumbbells.category-product__dumbbells--top {
+        width: 390px;
+        height: 250px;
+    }
+    .category-product__dumbbells--top img {
+        width: 390px;
+    }
+    .category-product__stregth--bottom img {
+        width: 390px;
+        margin-top: 10px;
+    }
+    .category-product__power-rack-and-cages--top img {
+        width: 390px;
+    }
+    #category-product .icon {
+        text-align: center;
+        padding-top: 35px;
+    }
+    #category-product .title {
+        text-align:center ;
+        margin-top: 15px;
+        font-size: 18px;
+        font-family: "Myriad Pro";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    #category-product .text{
+        width: 330px;
+        text-align:center;
+        padding-top: 25px;   
+        margin-left: 25px;
+        font-size: 18px;
+        font-family: "Myriad Pro";
+        color: #948c8c;
+        line-height: 1.2;
+     
+    }
+    .category-product_dumbbells .category-product__dumbbells--bottom {
+        width: 390px;
+        height: 250px;
+    }
+    .category-product__stregth{
+        width: 390px;
+        height: 500px;
+    }
+    .category-product__stregth .category-product__stregth--top {
+        width: 390px;
+        height: 250px;
+    }
+    .category-product__stregth .category-product__stregth--bottom {
+        width: 390px;
+        height: 250px;
+    }
+    .category-product__power-rack-and-cages {
+        width: 390px;
+        height: 500px;
+    }
+    .category-product__power-rack-and-cages .category-product__power-rack-and-cages--top {
+        width: 390px;
+        height: 250px;
+    }
+    .category-product__power-rack-and-cages .category-product__power-rack-and-cages--bottom {
+        width: 390px;
+        height: 250px;
+    }
+    #product {
+        width: 1170px;
+        height: 800px;
+        position: absolute;
+        z-index: 6; 
+        left: 365px;
+        bottom: -1200px;
+        
+    }
+    #product .tap-bar li.list-sp :hover  {
+        transition: 0.5s linear ;
+        color:rgb(221, 47, 49);
+        border-bottom: 1px solid rgb(221, 47, 49);
+    }
+    #product .tap-bar li.list-sp{
+        color: black;
+        list-style: none;
+        display: inline-block;
+    }
+    #product .tap-bar li a{
+        color: black;
+        list-style: none;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0px 10px;
+        font-family: "Myriad Pro";
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.333;
+        text-align: left;
+    } 
+    
+     #product .product__top {
+         border-top: 1px solid #ebebeb ;
+         width: 100%;
+         max-width: 1170px;
+         height: auto;
+         max-width: 1170px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;  
+     }
+    
+    
+    
+    
+    
+    
+    
+    
+     #product .product__top  img {
+        width: 265px;
+    }
+    #product .product__top .product__top--1{
+        margin-top: 40px;
+        width: 23%;
+        max-width: 270px;
+        height: 330px ;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 6; 
+    }  
+    #product .product__top .product__top--1 .top .btn .btn-1 {
+        width: 34px;
+        height: 34px;
+        border: 1px solid #ebebeb;
+        border-radius: 7px 0px ;
+        text-align: center;
+        line-height: 35px;
+        
+    }
+    
+    #product .product__top .product__top--1 .btn {
+        display: none;
+    }
+     .product__top .product__top--1 .btn .btn-1 i {
+        color: #777777;
+    
+    }
+    #product  .product__top .product__top--1 :hover .btn {
+        display: block;
+    }
+     .product__top .product__top--1:hover {
+      border: 2px solid #ebebeb;
+    }  
+    .fas {
+        border-radius: 7px 0px ;
+        padding: 2px;
+    
+    }
+    .product__top .product__top--1  .btn .btn-1  :hover {
+        background-color: #dd2f31;
+        color: #fff;
+        
+    }
+    #product .product__bottom .product__bottom--1{
+        width: 271px;
+        height:330px ;
+        box-sizing: border-box;
+        margin: 30px 12px;
+        /* border: 1px solid #ebebeb; */
+        position: relative;
+        z-index: 6; 
+    }   
+    .product__top--1 .bottom .text-pro {
+        margin: 12px 0px 12px 25px;
+        color: #000000;
+        font-size: 16px;
+        font-family: "Myriad Pro";
+        line-height: 1.333;
+    
+    }
+    
+    .product__bottom--1 .bottom .text-pro {
+        margin: 12px 0px 12px 25px;
+        color: #111111;
+        font-size: 16px;
+        font-family: "Myriad Pro";
+        line-height: 1.333;
+    
+    }
+    
+    .product__top--1  .bottom .text-pro-bold {
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+        margin-left: 25px;
+    } 
+    
+    .product__bottom--1  .bottom .text-pro-bold {
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+        margin-left: 25px;
+    
+    } 
+    .product__top--1  .top .btn .btn-1  {
+        width: 35px;
+        height: 35px;
+        margin:  20px 0px 0px 0px ; 
+    }
+    .product__top--1 .btn .btn-1 i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        color: black;
+        background: #ffffff;
+    }
+    .product__top--1 .top .btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left:  210px;
+        top: 0px;
+        z-index: 7; 
+    } 
+      #main #Client__say {
+        width: 1170px;
+        height: 400px;
+        position: absolute;
+        left: 365px;
+        bottom: -1600px;
+        z-index: 8;
+        text-align: center;
+        
+     }
+     #Client__say .Client__say--title {
+         margin-bottom: 30px;
+         color: black;
+         font-size: 18px;
+         font-family: "Myriad Pro";
+         font-weight: bold;
+         line-height: 1.333;
+         text-align: center;
+     }
+    
+     #Client__say .Client__say--img img {
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        margin-bottom: 20px;
+     }
+     #Client__say .text-client-say {
+         width: 580px;
+         height: 50px;
+         margin: auto;
+         color: #777777;
+         font-size: 18px;
+         font-family: "Myriad Pro";
+         line-height: 1.333;
+         margin-bottom: 20px;
+     }
+     #Client__say .name-client-say  {
+        color: #000000;
+        font-size: 16px;
+        font-family: "Myriad Pro";
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.333;
+        text-align: center;
+        margin-bottom: 10px;
+     }
+     #Client__say .text-below-name {
+        color: #777777;
+        font-size: 14px;
+        font-family: "Myriad Pro";
+        line-height: 1.333;
+        text-align: center;
+     }
+     .three-dots{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    .dot{
+        width: 12px;
+        height: 12px;
+        background-color: #777777;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .dot1{
+        background-color: #dd2f31;
+    }
+    .dot:hover{
+        background-color: #dd2f31;
+    }
+    #main #Brand {
+        width: 1170px;
+        height: 150px;
+        position: absolute;
+        left: 365px;
+        bottom: -1800px;
+        z-index: 9;
+        border-top: 1px solid #ebebeb;
+    }
+    #Brand .brands { 
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;   
+    }
+    
+    #main #footer {
+        width: 100%;
+        height: 530px;
+        position: absolute;
+        left: 0px;
+        bottom: -2500px;
+        background: #222222;
+    }
+    #footer .footer__top .logo {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    #footer .footer__top .text__fotter {
+        width: 700px;
+        height: 60px;
+        margin: 0 auto;
+        color: #777777;
+        font-size: 16px;
+        font-family: "Myriad Pro";
+        line-height: 1.7;
+        text-align: center;
+        margin-bottom: 30px;
+        
+    }
+    #footer .footer__top .icon-footer {
+        width: 275px;
+        height: 50px;
+        margin: auto;
+    }
+    .icon-footer>i{
+        margin-left: 23px;
+        margin-right: 23px;
+        color: #777777;
+    }
+    #footer .footer__bottom {
+        width: 100%;
+        max-width: 1170px;
+        border-top: 1px solid  #444444;
+        margin: auto;
+    
+      
+    }
+     .container__footer {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container__footer .title-footer2{
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family:  "Myriad Pro";
+    }
+    .line-contact{
+        display: flex;
+        margin-top: 20px;
+        color: #777777;
+    }
+    .line-contact>i{
+        margin-top: 3px;
+        margin-right: 20px;
+        color: #777777;
+    }
+    .text-footer2{
+        margin-top: 20px;
+        color: #777777;
+        font-family: "Poppins" ;
+    }
+    .bottom-footer{
+        background-color: #111111;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        height: 48px;
+        color: #777777;
+        font-family: "Poppins";
+    }
+    
